@@ -25,11 +25,11 @@ O grupo leva o nome de Augusta Ada Byron King, Condessa de Lovelace, atualmente 
 
 ## Explicação do código
 
-1-Introdução-a-testes-no-Python
+### 1-Introdução-a-testes-no-Python
 Este código implementa uma função str_to_bool que converte uma string em um booleano. Ele considera algumas strings específicas como verdadeiras ('y', 'yes') e outras como falsas ('no', 'n'). Além disso, inclui testes unitários usando o módulo unittest para garantir o comportamento esperado da função. Os testes verificam se 'y' e 'Yes' são convertidos corretamente para verdadeiro e se a função levanta uma exceção AttributeError ao receber uma entrada inválida que não é uma string.
 
 
-2-Fazer-testes-com-Pytest
+### 2-Fazer-testes-com-Pytest
 Este código implementa uma função admin_command que adiciona o prefixo sudo a um comando, a menos que explicitamente não seja necessário. A função espera que command seja uma lista. O teste de unidade é realizado usando o módulo pytest para verificar se a função funciona corretamente em diferentes cenários:
 
 test_no_sudo: Verifica se o comando não é prefixado com sudo quando sudo é definido como False.
@@ -37,7 +37,7 @@ test_sudo: Verifica se o comando é prefixado com sudo quando sudo é definido c
 test_non_list_commands: Garante que a função levante um erro TypeError se o comando não for uma lista.
 
 
-3-Teste-Avançado-com-Pytest
+### 3-Teste-Avançado-com-Pytest
 Este código contém testes e fixtures para várias funcionalidades, usando o framework pytest:
 
 str_to_bool: Uma função que converte strings em valores booleanos, sendo testada com parâmetros usando @pytest.mark.parametrize:
@@ -50,3 +50,22 @@ tmpfile: Uma fixture que cria um arquivo temporário e retorna seu caminho.
 test_done_file: Verifica se um arquivo /tmp/done existe e contém o valor "1".
 test_f: Usa a fixture tmpfile para criar um arquivo temporário, verifica se ele existe e contém o valor "1".
 
+
+## Aprendizados
+
+A equipe preferiu realizar cada uma sua lista de exercícios e compartilhar via discord como havia criado a lógica dos mesmos.
+
+Com isso, escolhíamos qual código seria o oficial para entrar no projeto final.
+
+Também optamos pelos projetos serem criados de formas diferentes para demostrar a pluralidade da equipe e suas visões diferentes.
+
+
+## Referência
+
+ - [Mulheres Fantásticas | Ada Lovelace](https://www.youtube.com/watch?v=kveunrBU5UM)
+ - [WoMakersCode](https://www.maismulheres.tech)
+ - [Documentação Python](https://docs.python.org/pt-br/3/index.html)
+ - [GitHub Docs](https://docs.github.com/pt)
+ - [Realize o curso : Introdução a testes no Python :](https://learn.microsoft.com/pt-br/training/modules/python-get-started-testing/)
+ - [Realize o curso Fazer testes com Pytest :](https://learn.microsoft.com/pt-br/training/modules/test-python-with-pytest/)
+ - [Realize o curso : Teste avançado com Pytest :](https://learn.microsoft.com/pt-br/training/modules/python-advanced-pytest/)
