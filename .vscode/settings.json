@@ -1,0 +1,7 @@
+{
+    "python.testing.pytestArgs": [
+        "2-Fazer-testes-com-Pytest-(Desafio 5)"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
