@@ -26,10 +26,12 @@ O grupo leva o nome de Augusta Ada Byron King, Condessa de Lovelace, atualmente 
 ## Explicação do código
 
 ### 1-Introdução-a-testes-no-Python
+
 Este código implementa uma função str_to_bool que converte uma string em um booleano. Ele considera algumas strings específicas como verdadeiras ('y', 'yes') e outras como falsas ('no', 'n'). Além disso, inclui testes unitários usando o módulo unittest para garantir o comportamento esperado da função. Os testes verificam se 'y' e 'Yes' são convertidos corretamente para verdadeiro e se a função levanta uma exceção AttributeError ao receber uma entrada inválida que não é uma string.
 
 
 ### 2-Fazer-testes-com-Pytest
+
 Este código implementa uma função admin_command que adiciona o prefixo sudo a um comando, a menos que explicitamente não seja necessário. A função espera que command seja uma lista. O teste de unidade é realizado usando o módulo pytest para verificar se a função funciona corretamente em diferentes cenários:
 
 test_no_sudo: Verifica se o comando não é prefixado com sudo quando sudo é definido como False.
@@ -38,6 +40,7 @@ test_non_list_commands: Garante que a função levante um erro TypeError se o co
 
 
 ### 3-Teste-Avançado-com-Pytest
+
 Este código contém testes e fixtures para várias funcionalidades, usando o framework pytest:
 
 str_to_bool: Uma função que converte strings em valores booleanos, sendo testada com parâmetros usando @pytest.mark.parametrize:
