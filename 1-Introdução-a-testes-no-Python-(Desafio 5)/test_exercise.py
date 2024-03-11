@@ -1,12 +1,12 @@
 import unittest
 
-def strtobool(value):
+def str_to_bool(value):
     try:
         value = value.lower()
     except AttributeError:
         raise AttributeError(f"{value} must be of type string")
-    truevalues = ['y','yes']
-    falsevalues = ['no', 'n']
+    true_values = ['y','yes']
+    false_values = ['no', 'n']
 
     if value in true_values:
         return True
@@ -27,5 +27,5 @@ class TestStrToBool(unittest.TestCase):
         with self.assertRaises(AttributeError):
             str_to_bool(1)
 
-if __name == '__main':
+if __name__ == '__main__':
     unittest.main()
